@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var myString ="abc is abc iy yst abc";
+    var myPosition = 0;
+    var myCount = 0;
+    var myStr =myString.substring(0,3);
+    while(myPosition!=-1)
+    {
+        myPosition = myString.indexOf("abc",myPosition);
+        if(myPosition!=-1)
+        {
+            myCount++;
+            myPosition++;
+        }
+    }
+    document.write("the "+myStr+" is "+myCount);
+</script>
+
+</body>
+</html>
